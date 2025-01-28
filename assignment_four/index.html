@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Development Training</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <img src="../assets/logoipsum-331.svg" alt="placeholder logo" class="logo" />
+            <h1>For Individuals</h1>
+            <p>
+                Start benefiting from the wellness experience. For companies looking
+                on increasing productivity, and improving organization wellness.
+            </p>
+        </div>
+
+        <div class="right">
+            <form id="Registration-form">
+                <div class="input-group">
+                    <div class="input-field">
+                        <label id="name-label" for="first-name">First Name</label>
+                        <input id="first-name" type="text" placeholder="First Name" />
+                    </div>
+                    <div class="input-field">
+                        <label id="name-label" for="last-name">Last Name</label>
+                        <input id="last-name" type="text" placeholder="Last Name" />
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-field">
+                        <label for="gender">Gender</label>
+                        <select id="gender">
+                            <option value="select">Select here</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <div class="input-field">
+                        <label id="dob-label" for="dob">Date of Birth</label>
+                        <input type="date" id="dob" onfocus="this.type='date'" onblur="if(this.value===''){this.type='text'}" placeholder="Select here">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-field">
+                        <label id="weight-label" for="weight">Weight (KG)</label>
+                        <input id="weight" type="number" placeholder="Enter weight" required />
+                    </div>
+                    <div class="input-field">
+                        <label id="height-label" for="height">Height (CM)</label>
+                        <input id="height" type="number" placeholder="Enter height here" required />
+                    </div>
+                </div>
+
+                <div class="input-field">
+                    <label for="activity">Activity Level</label>
+                <select id="activity">
+                    <option value="select">Select here</option>
+                    <option value="sedentary">Sedentary</option>
+                    <option value="moderate">Moderate</option>
+                    <option value="active">Active</option>
+                </select>
+                </div>
+
+                <div class="input-field">
+                    <label for="password">Password</label>
+                <input id="password" type="password" placeholder="Enter password" required />
+                </div>
+
+                <button id="register" type="submit">Register</button>
+
+                <p class="terms">
+                    By clicking Register, you agree to our
+                    <a href="#">Terms of Use</a> and our <a href="#">Privacy Policy</a>
+                </p>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
