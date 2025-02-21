@@ -192,6 +192,7 @@ body {
 .pricing-grid {
     display: flex;
     justify-content: center;
+    align-items: center;
     max-width: 1200px;
     margin: 3rem auto;
 }
@@ -200,13 +201,14 @@ body {
     padding: 2rem;
     border-radius: 12px;
     border: 1px solid var(--primary-blue);
+    max-height: 400px;
 }
 
 .price-card.featured {
     background: var(--dark-blue);
     color: #fff;
     border: none;
-    /* height: ; */
+    min-height: 450px;
 }
 
 .price {
